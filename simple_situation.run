@@ -1,0 +1,15 @@
+reset;
+model simple_situation.mod;
+data simple_situation.dat;
+option solver cplex;
+solve;
+display revenue;
+display z;
+display x;
+display ue;
+#display one_path;
+#display indecator;
+#display one_path_left;
+#expand node_memory;
+#expand one_path[3,2];
+
